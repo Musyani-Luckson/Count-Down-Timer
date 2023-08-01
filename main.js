@@ -1,5 +1,5 @@
 // Importing the hp object from the './helper/lib.js' file
-import { hp } from './helper/lib.js';
+import { hp } from './lib.js';
 
 // Define the countDownTimer class
 class countDownTimer {
@@ -239,7 +239,7 @@ function formatDateToWords(date, time) {
 }
 
 countDownTimer.prototype.soundEffects = function(sound, state) {
-	const src = [`../sounds/${sound}.mp3`];
+	const src = [`./${sound}.mp3`];
 	const audio = new Howl({
 		src: src,
 	});
